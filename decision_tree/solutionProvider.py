@@ -326,7 +326,7 @@ def providePullSolution(cmd,msg):
         When you open a conflict file, you will see symbols like "<<<<<<", "=======" and ">>>>>>". These are called conflict markers. The conflict parts are between conflict marker "<<<<<<" and ">>>>>>" divided by conflict marker "======"."""
             command = ['git add <conflict-file-names>', 
                         'git commit -m "Your commit message here"',
-                        'git push']
+                        'git push origin <branch-name>']
             solution = ['Open one of following conflict files:\n\n' + conflictFilesStr,
                         'Remove conflict markers ("<<<<<<",">>>>>>","======") in the file along with the part of code you do not want.',
                         'Repeat previous steps till all conflicts in files are resolved',
