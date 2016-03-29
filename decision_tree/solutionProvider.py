@@ -28,7 +28,7 @@ def provideSolution(cmd, msg):
     print('##############################################################################' + Style.RESET_ALL)
     
     #logging
-    constant.log['isSatisfy'] = askSatisfaction()
+    #constant.log['isSatisfy'] = askSatisfaction()
     return
 
 # ask for user satisfaction
